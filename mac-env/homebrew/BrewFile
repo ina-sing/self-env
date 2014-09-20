@@ -1,0 +1,25 @@
+# Make sure using latest Homebrew
+update
+
+# Update already-installed formula
+upgrade
+
+# Add Repository
+tap phinze/homebrew-cask || true
+tap homebrew/binary || true
+
+# Packages for development
+install zsh
+install git
+install vim
+
+# Packages for brew-cask
+install brew-cask
+
+# .dmg from brew-cask
+cask install google-chrome
+#cask install virtualbox
+#cask install vagrant
+
+# Remove outdated versions
+cleanup
