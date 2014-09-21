@@ -10,7 +10,6 @@ eval "$(rbenv init -)"
 PS1="[\u@\h \W]$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-#export EDITOR='subl -w'
 
 #alias vi='vim'
 alias ll='ls -ltr'
