@@ -5,21 +5,89 @@ update
 upgrade
 
 # Add Repository
-tap phinze/homebrew-cask || true
-tap homebrew/binary || true
+tap caskroom/homebrew-cask
+tap homebrew/binary
+tap supermomonga/homebrew-splhack
+tap caskroom/versions
+tap caskroom/homebrew-versions
 
 # Packages for development
 install zsh
 install git
+install emacs
 install vim
+install --HEAD macvim-kaoriya
+install ricty
+install java
+
+install autoconf
+install curl
+install freetype
+install jpeg
+install lynx
+install pkg-config
+install tree
+install bsdmake
+install curl-ca-bundle
+install gdbm
+install libevent
+install openssl
+install proctools
+install ruby-build
+install wget
+install coreutils
+install fontconfig
+install gettext
+install libpng
+install pcre
+install rbenv
+install tig
+install xz
+install ctags
+install fontforge
+install libtiff
+install pear
+install readline
+install tmux
 
 # Packages for brew-cask
 install brew-cask
 
 # .dmg from brew-cask
+
+# browser
 cask install google-chrome
-#cask install virtualbox
-#cask install vagrant
+cask install firefox
+
+# develop
+cask install iterm2
+cask install phpstorm
+cask install intellij-idea
+cask install virtualbox
+cask install vagrant
+cask install sublime-text3
+cask install sourcetree
+cask install caskroom/versions/java7
+
+# utility
+cask install alfred
+cask install calibre
+cask install dropbox
+cask install evernote
+cask install Karabiner
+cask install bettertouchtool
+cask install clipmenu
+cask install google-japanese-ime
+cask install filezilla
+cask install coteditor
+cask install onepassword
+cask install appcleaner
+cask install mplayerx
+cask install sophos-anti-virus-home-edition
+#cask install parallels
+cask install cheatsheet
+cask alfred link
 
 # Remove outdated versions
 cleanup
+cask cleanup
